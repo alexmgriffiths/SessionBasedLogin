@@ -14,7 +14,7 @@
                 return "Invalid username or password.";
 
             //Make sure the username exists in the database.
-            if(!$this->userExists)
+            if(!$this->userExists())
                 return "That user could not be found!";
 
             //Since this will also return an ID we need to specify that it has to be exactly = FALSE to fail
